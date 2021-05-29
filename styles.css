@@ -1,0 +1,401 @@
+/* ///////////\\\\\\\\\\\\\ */
+/* Mobile First Development */
+/* \\\\\\\\\\\///////////// */
+:root{
+    --bgcolor: white;
+    --headercolor: black;
+    --textcolor: #626262;
+    --navcolor: #c4c4c4;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: linear-gradient(150.31deg, #FFFFFF 72.05%, rgba(97, 255, 246, 1) 79.34%,
+                                            rgba(97, 255, 246, 1) 79.34%, #FFFFFF 80%);
+}
+.Logo{
+    align-self: center;
+    animation: fill-anim 1s ease forwards 5s;
+}
+.Logo path:nth-child(2){
+    stroke-dasharray: 167;
+    stroke-dashoffset: 167;
+    animation: line-anim 2s ease forwards;
+}
+.Logo path:nth-child(3){
+    stroke-dasharray: 107;
+    stroke-dashoffset: 107;
+    animation: line-anim 2s ease forwards 0.3s;
+}
+.Logo path:nth-child(4){
+    stroke-dasharray: 167;
+    stroke-dashoffset: 167;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+.Logo path:nth-child(5){
+    stroke-dasharray: 212;
+    stroke-dashoffset: 212;
+    animation: line-anim 2s ease forwards 0.9s;
+}
+.Logo path:nth-child(6){
+    stroke-dasharray: 159;
+    stroke-dashoffset: 159;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+.Logo path:nth-child(7){
+    stroke-dasharray: 175;
+    stroke-dashoffset: 175;
+    animation: line-anim 2s ease forwards 1.5s;
+}
+.Logo path:nth-child(8){
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+.Logo path:nth-child(9){
+    stroke-dasharray: 167;
+    stroke-dashoffset: 167;
+    animation: line-anim 2s ease forwards 2.1s;
+}
+.Logo path:nth-child(10){
+    stroke-dasharray: 177;
+    stroke-dashoffset: 177;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+.Logo path:nth-child(11){
+    stroke-dasharray: 137;
+    stroke-dashoffset: 137;
+    animation: line-anim 2s ease forwards 2.7s;
+}
+.Logo path:nth-child(12){
+    stroke-dasharray: 65;
+    stroke-dashoffset: 65;
+    animation: line-anim 2s ease forwards 3s;
+}
+.Logo path:nth-child(13){
+    stroke-dasharray: 157;
+    stroke-dashoffset: 157;
+    animation: line-anim 2s ease forwards 3.3s;
+}
+
+a {
+    text-decoration: none;
+    color: var(--headercolor);
+}
+a:visited {
+    color: var(--headercolor);
+}
+a:hover, a:focus {
+    color: var(--textcolor);
+}
+h2 {font-size: 50px;font-weight: 700;}
+h3 {font-size: 24px; font-weight: 400;}
+h4 {font-size: 20px;}
+p {font-size: 20px;}
+.navbar {
+    background-color: var(--bgcolor);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+nav {
+    width: 90%;
+    margin: auto;
+    padding-top: 1em;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav img {
+    height: 25%;
+    animation: logo_anim 2s ease-in-out;
+}
+#my-awesome-nav li.active a {
+    font-weight: 700;
+    font-style: italic;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+    background-color: var(--navcolor);
+}
+
+main {
+    position: relative;
+    top:7em;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    margin-bottom: 7em;
+}
+section{
+    padding-top:7em;
+    grid-column: 2/3;
+}
+.aboutVisuals{
+    display: flex;
+    justify-content: center;
+}
+
+#Photo{
+    width: 80%;
+    display: flex;
+}
+.social-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.social-links img {
+    width: 3.5em;
+    filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, 0.25));
+}
+.social-links img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.sectionDesc{
+    color: var(--textcolor);
+}
+
+.orange {
+    background-color: #EF8354;
+    border: 13px solid #000000;
+    padding: 30px;
+}
+.cards {
+    max-width: 250px;
+    min-width: 70px;
+    margin: auto;
+}
+.card{
+    transition: transform 250ms ease-in-out;
+    border-radius: 40px 40px 30px 30px;
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    height: 300px;
+    filter: drop-shadow(-5px 5px 4px rgba(0, 0, 0, 0.25));
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card p{
+    width: 80%;
+    margin: auto;
+    color: var(--textcolor);
+    font-size: 15px;
+}
+.cardHeader {
+    margin: 10%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.educations {
+    margin: 4em 5% 0 5%;
+}
+.education {
+    margin-bottom: 100px;
+}
+.education p {
+    color: var(--textcolor);
+}
+.education img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 2em;
+}
+.experiencesPage {
+    margin-top: 0;
+}
+.experiences {
+    margin: 7em 5% 0 5%;
+}
+.experience {
+    margin-bottom: 100px;
+}
+.experience p {
+    color: var(--textcolor);
+}
+.experience img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 2em;
+}
+footer {
+    background-color: black;
+    color: white;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#signature {
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    display: inline-block;
+    padding: .4em;
+}
+@media screen and (max-width: 500px) {
+    #Logo{
+        width: fit-content;
+    }
+    li a{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 768px) {
+    body {
+        background: linear-gradient(160.31deg, #FFFFFF 70%, rgba(97, 255, 246, 1) 77.34%,
+        rgba(97, 255, 246, 1) 77.34%, #FFFFFF 78.5%);
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        grid-column-gap: 10%;
+    }
+    p {font-size: 22px;}
+}
+@media screen and (min-width: 992px) {
+    body {
+        background: linear-gradient(120.31deg, #FFFFFF 70.05%, rgba(97, 255, 246, 1) 100%);
+    }
+    nav {
+        width: 90%;
+        margin: 0 5%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav h3 {
+        font-size: 30px;
+    }
+    .nav-bar {
+        width: 40%;
+        margin-right: 0;
+        height: 2em;
+        align-items: center;
+    }
+    .aboutPage {
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
+    .social-links {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .aboutVisuals {
+        flex-direction: column;
+        grid-column: 2/5;
+        grid-row: 2/10;
+        justify-self: center;
+    }
+    #AboutHeader {
+        grid-row: 3/4;
+        grid-column:7/10 ;
+        justify-self: start;
+    }
+    #AboutDesc {
+        grid-row: 6/8;
+        grid-column: 6/10;
+    }
+    #AboutDesc p {
+        text-align: start;
+    }
+    #Photo {
+        width: 100%;
+    }
+    .educations {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .education {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .education img {
+        width: 25%;
+        height: fit-content;
+        object-fit: scale-down;
+    }
+    .education p {
+        text-align: start;
+    }
+    .educationDesc {
+        width: 50%;
+    }
+    .experiencesPage h2 {
+        margin-left: 10%;
+    }
+    .experience{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .experience img {
+        width: 25%;
+        object-fit: scale-down;
+    }
+    .experience p {
+        text-align: start;
+    }
+    .experienceDesc{
+        width: 50%;
+    }
+    #ExperiencesHeader h2{
+        text-align: start;
+    }
+    footer {
+        height: 150px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .cards {
+        display: flex;
+    }
+    body {
+        background: linear-gradient(120.31deg, #FFFFFF 65.05%, rgba(97, 255, 246, 1) 100%);
+    }
+    h2 {font-size: 64px;font-weight: 700;}
+    h3 {font-size: 30px; font-weight: 400;}
+    h4 {font-size: 22px;}
+    p {font-size: 26px;}
+}
+
+/* Animations for SVG "ETEM KOSENCIG" */
+@keyframes line-anim{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill-anim {
+    from{
+        fill: transparent;
+    }
+    to{
+        fill: black;
+    }
+}
